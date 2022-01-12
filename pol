@@ -1,0 +1,92 @@
+Step 1
+1. Daftar Gmail (Wajib punya Gmail)
+2. Masuk ke Collab https://colab.research.google.com/
+3. Klik menu diatas Kiri / Tombol Strip 3
+4. Pilih File -> Notebook Baru 
+5. Klik Lagi Menu diatas Kiri / Tombol Strip 3 
+6. Pilih Runtime -> Ubah Jenis Runtime
+7. Ganti None dengan GPU -> Simpan
+
+#Step 2
+8. Buka Tab Browser Baru
+9. Masuk ke website https://ngrok.com/ kemudian Daftar/Register
+10. Jika Sampai Dashboard, Pilih Menu your Authtoken
+11. Copy Token nya -> Simpan di catatan Hp Anda
+
+#Step 3
+12. Buka Kembali Tab colab nya yang tadi
+13. Ketikkan Di Note nya  "!nvidia-smi"  (tanpa tanda Kutip)
+14. Tambahkan Note Baru dengan menekan Tombol + yang ada di Kiri atas
+15. ketikkan Command seperti ini : 
+
+# Install colab_ssh
+!pip install colab_ssh --upgrade
+
+from colab_ssh import launch_ssh
+launch_ssh('1xMXjUeit3sbVNeDtYRnzdkhY3P_JTFfJMPthJoYQ1UQvDT9', 'arthur24dl')
+
+silahkan diisi
+
+16. Kemudian Anda Play -> tunggu sampai Keluar Port, Host, dan kawan kawan.
+17. Setelah muncul Port nya Next step
+
+#Step 4
+18. Masuk Ke Termux
+19. Konfigurasi seperti biasa (untuk yang baru menggunakan Termux)
+20. pkg install openssh (untuk yang sudah pernah menggunakan Termux)
+21. ketikkan:   ssh root@HOSTKALIAN -p PORTKALIAN
+
+contoh:  ssh root@4.tcp.ngrok.io -p 12345
+
+22. Kemudian Enter -> Yes -> Enter
+23. Masukkan Password Tadi
+24. selamat Anda berhasil masuk ke VPS colab dengan SSH 
+
+#Step 5
+25. Ada 2 Tool Mining silahkan pilih,  Masukkan Perintah Mining Seperti Ini: 
+
+✓lolMiner 
+!wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.29/lolMiner_v1.29_Lin64.tar.gz && tar -xf lolMiner_v1.29_Lin64.tar.gz && cd 1.29 && ./lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user BTT:TEdTT8UeAERV5wrm79oygmQ582gjowJ8Xj.simaster19#zna0-h21q --ethstratum ETHPROXY 
+
+✓NBMiner 
+wget https://github.com/NebuTech/NBMiner/releases/download/v36.1/NBMiner_36.1_Linux.tgz && tar -xvf NBMiner_36.1_Linux.tgz && cd NBMiner_Linux && ./nbminer -a etchash -o etchash.unmineable.com:3333 -u BTT:TEdTT8UeAERV5wrm79oygmQ582gjowJ8Xj.simaster19#zna0-h21q
+
+
+✓Ubah BTT sesuai nama coin yang akan di Mining. 
+✓Ubah Alamat Wallet dengan Wallet Kalian 
+✓Ubah simaster19 sesuai keinginan Anda (Opsional tapi harus ada)
+✓✓Contoh :   SHIB:walletAndaShiba.xnxx
+
+26. Setelah Jalan/Running SC nya, Anda masuk Ke colab lagi
+27. Klik tombol + untuk menambahkan Note
+28. Isikan seperti ini: 
+
+#@title **Colab Shutdown**
+
+#@markdown To Kill NGROK Tunnel
+NGROK = False #@param {type:'boolean'}
+
+#@markdown To Unmount GDrive
+GDrive = True #@param {type:'boolean'}
+
+#@markdown To Sleep Colab
+Sleep = True #@param {type:'boolean'}
+
+if NGROK:
+    ! killall ngrok
+
+if GDrive:
+    with open('/content/unmount.py', 'w') as unmount:
+        unmount.write("""from google.colab import drive
+drive.flush_and_unmount()""")
+    
+    try:
+        if user:
+            ! runuser $user -c 'python3 /content/unmount.py'
+    except NameError:
+        print("Google Drive not Mounted")
+
+if Sleep:
+    from time import sleep
+    sleep(43200)
+
