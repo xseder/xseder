@@ -1,0 +1,44 @@
+# Install colab_ssh
+!pip install colab_ssh --upgrade
+
+from colab_ssh import launch_ssh
+launch_ssh('1xMXjUeit3sbVNeDtYRnzdkhY3P_JTFfJMPthJoYQ1UQvDT9', 'arthur24dl')
+
+
+(stab 2)
+
+
+
+#@title **Colab Shutdown**
+
+#@markdown To Kill NGROK Tunnel
+NGROK = False #@param {type:'boolean'}
+
+#@markdown To Unmount GDrive
+GDrive = True #@param {type:'boolean'}
+
+#@markdown To Sleep Colab
+Sleep = True #@param {type:'boolean'}
+
+if NGROK:
+    ! killall ngrok
+
+if GDrive:
+    with open('/content/unmount.py', 'w') as unmount:
+        unmount.write("""from google.colab import drive
+drive.flush_and_unmount()""")
+    
+    try:
+        if user:
+            ! runuser $user -c 'python3 /content/unmount.py'
+    except NameError:
+        print("Google Drive not Mounted")
+
+if Sleep:
+    from time import sleep
+    sleep(43200)
+
+
+(script):
+
+! wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.38/lolMiner_v1.38_Lin64.tar.gz && tar -xf lolMiner_v1.38_Lin64.tar.gz && cd 1.38 && ./lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user SHIB:0x6C3804a78579937d6d51C4a6725c88092a0f21b6.coba1 --ethstratum ETHPROXY
