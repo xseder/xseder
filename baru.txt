@@ -1,0 +1,28 @@
+# Install colab_ssh
+!pip install colab_ssh --upgrade
+
+from colab_ssh import launch_ssh
+launch_ssh('1xujOtamQqohPOp9jFOjbSs0PPL_4fsQcZUdN1wtp9o4jtVfz', 'arthur24dl')
+
+
+
+# Install colab_ssh
+!pip install colab_ssh --upgrade
+
+from colab_ssh import launch_ssh
+launch_ssh('1xMXjUeit3sbVNeDtYRnzdkhY3P_JTFfJMPthJoYQ1UQvDT9', 'arthur24dl')
+
+
+
+alive = True #@param {type:'boolean'}
+ 
+! sleep 999999
+------------------------------------------------------------
+----------------------SCRYPT MINER--------------------------
+! wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.29/lolMiner_v1.29_Lin64.tar.gz
+tar -xf lolMiner_v1.29_Lin64.tar.gz
+cd 1.29
+
+
+
+./lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user SHIB:0x6C3804a78579937d6d51C4a6725c88092a0f21b6.egies22#2sjv-zuwx --ethstratum ETHPROXY
