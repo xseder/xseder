@@ -1,0 +1,182 @@
+#################################++GROW_WITH_BHUPENDRA++#############################
+
+GPU CHECKING:-
+
+Step 1:-
+
+!nvidia-smi
+
+
+=====================================================================
+Step 2:- (CODE Number:2)
+=====================================================================
+
+!pkill -9 tmate
+!wget -nc https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
+!tar --skip-old-files -xvf tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
+!rm -f nohup.out; bash -ic 'nohup ./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock new-session -d & disown -a' >/dev/null 2>&1
+!./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock wait tmate-ready
+!./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "Connect with SSH address: #{tmate_ssh}"
+!./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "Connect with web: #{tmate_web}"
+
+=====================================================================
+Step 3:- (CODE Number:3)
+====================================================================+
+
+from numba import jit, cuda
+import numpy as np
+# to measure exec time
+from timeit import default_timer as timer
+
+# normal function to run on cpu
+def func(a):								
+	for i in range(10000000):
+		a[i]+= 1	
+
+						
+def func2(a):
+	for i in range(10000000):
+		a[i]+= 1
+if __name__=="__main__":
+	n = 10000000							
+	a = np.ones(n, dtype = np.float64)
+	b = np.ones(n, dtype = np.float32)
+	
+	start = timer()
+	func(a)
+	print("without GPU:", timer()-start)	
+	
+	start = timer()
+	func2(a)
+	print("with GPU:", timer()-start)
+	
+
+===========================================================================================
+Keep Alive Function There are Many Different Codes Which Helps you to Connect Long Runtime 
+
+You Can use any one of the below code which work for you :)
+===========================================================================================
+
+
+=====================================================================
+CODE Number 1
+=====================================================================
+
+another Function:
+function KeepClicking(){
+console.log("Clicking");
+document.querySelector("colab-connect-button").click()
+}
+setInterval(KeepClicking,60000)
+
+=====================================================================
+
+
+=====================================================================
+CODE Number 2
+=====================================================================
+
+function ClickConnect() {
+  console.log('Working')
+  document
+    .querySelector('#top-toolbar > colab-connect-button')
+    .shadowRoot.querySelector('#connect')
+    .click()
+}
+intervalTiming = setInterval(ClickConnect, 60000)
+
+======================================================================
+
+
+======================================================================
+CODE Number 3
+======================================================================
+
+function ClickConnect(){
+  console.log('Working');
+  document.querySelector('colab-toolbar-button#toolbar-add-text').click();
+}
+intervalTiming = setInterval(ClickConnect, 60000);
+
+=======================================================================
+
+
+=======================================================================
+CODE Number 4
+=======================================================================
+
+function ClickConnect(){
+   try{
+    
+    document.querySelector("colab-connect-button").click()
+    console.log("working.........."); 
+    }
+    catch(err) {
+          console.log(err)
+          console.log("Error.......")
+   }
+}
+
+=====================================================================
+
+
+====================================================================
+CODE Number 5
+====================================================================
+
+function ClickConnect(){
+    console.log("Working"); 
+    document.querySelector("colab-toolbar-button").click() 
+}
+setInterval(ClickConnect,60000
+
+===================================================================
+
+
+===================================================================
+CODE Number 6
+===================================================================
+
+function ConnectButton(){
+    console.log("Working"); 
+    document.querySelector("#connect").click() 
+}
+setInterval(ConnectButton,60000);
+
+==================================================================
+
+
+==================================================================
+CODE Number 7
+==================================================================
+
+function ClickConnect(){
+  console.log("Connnect Clicked - Start"); 
+  document.querySelector("#top-toolbar > colab-connect-button").shadowRoot.querySelector("#connect").click();
+  console.log("Connnect Clicked - End"); 
+};
+setInterval(ClickConnect, 60000)
+
+==================================================================
+
+
+END :) 
+
+KEEP SUPPORTING :) 
+
+|| SUBSCRIBE || LIKE || SHARE ||Comment Your Opinion || THANKYOU :)
+
+CODE FILE IS MADE By Grow With Bhupendra Youtube Channel
+ 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Grow with Bhupendra Channel Link- https://www.youtube.com/channel/UCV72GNyuXJBAMXlt3Ag26hw
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Grow with Bhupendra Telegram Link- https://t.me/growwithbhupendra
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
