@@ -7,3 +7,6 @@ TONCOIN ./danila-miner run https://server1.whalestonpool.com EQBrUsE5ueI1_8JxPP_
 Open New Session putty
 
 ETH /root/lolMiner/lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user ETH:0x27d81dde6cae9bdd13f4135c1a1f63b62aae3838
+
+
+https://tonwhales.com/mining/stats/EQBrUsE5ueI1_8JxPP_6rMn-HSYmBoIoPpdClevARpLiCNC-
