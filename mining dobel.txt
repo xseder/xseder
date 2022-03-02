@@ -10,3 +10,8 @@ ETH /root/lolMiner/lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --us
 
 
 https://tonwhales.com/mining/stats/EQBrUsE5ueI1_8JxPP_6rMn-HSYmBoIoPpdClevARpLiCNC-
+
+LOLLIMINER POOL:
+__________________________
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.46a/lolMiner_v1.46a_Lin64.tar.gz && tar -xf lolMiner_v1.46a_Lin64.tar.gz && cd 1.46a && ./lolMiner -a TON --pool https://server1.whalestonpool.com --user EQBrUsE5ueI1_8JxPP_6rMn-HSYmBoIoPpdClevARpLiCNC-
+
