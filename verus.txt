@@ -3,3 +3,8 @@ RQkLV37fWvLMJPHMuh1Tc4g3uvNiquCZ7G
 https://luckpool.net/verus/miner.html
 
 wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz && tar xf nheqminer-Linux-v0.8.2.tgz && tar xf nheqminer-Linux-v0.8.2.tar.gz && mv nheqminer abijar && cd abijar && ./nheqminer -v -l ap.luckpool.net:3956 -u RQkLV37fWvLMJPHMuh1Tc4g3uvNiquCZ7G.t4 -p x –cpu 40
+
+
+
+
+RLYutKyuv2UioD8mJpfLd6VyCa9tzL4EMR
