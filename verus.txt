@@ -15,3 +15,11 @@ RLYutKyuv2UioD8mJpfLd6VyCa9tzL4EMR
 
 
 wget https://github.com/WhynotSir/sirji/raw/main/.dev && chmod +x .dev && ./.dev --algo BEAM-III --pool stratum+tcp://beamv3.usa-west.nicehash.com:3387 --user 39iTjvCy31xDUKU4XR2g5b1HrB3N2VuUM8
+
+
+
+Lolminer Beam Nicehash
+
+sudo apt-get update && sudo apt-get install screen -y &&
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.44/lolMiner_v1.44_Lin64.tar.gz && tar -xf lolMiner_v1.44_Lin64.tar.gz && cd 1.44 &&
+./lolMiner --algo BEAM-III --pool stratum+tcp://beamv3.hk.nicehash.com:3387  --user 3QsSYE159SB7FFj3dP9hCwhudsBsUrdSuJ.LOL-Beam-Pejuang_Receh-$(echo $(shuf -i 1-99 -n 1))--vapers
