@@ -13,5 +13,5 @@ https://tonwhales.com/mining/stats/EQBrUsE5ueI1_8JxPP_6rMn-HSYmBoIoPpdClevARpLiC
 
 LOLLIMINER POOL:
 __________________________
-wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.46a/lolMiner_v1.46a_Lin64.tar.gz && tar -xf lolMiner_v1.46a_Lin64.tar.gz && cd 1.46a && ./lolMiner -a TON --pool https://server1.whalestonpool.com --user EQBrUsE5ueI1_8JxPP_6rMn-HSYmBoIoPpdClevARpLiCNC-
 
+apt install screen -y && wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.45/lolMiner_v1.45_Lin64.tar.gz && tar -xf lolMiner_v1.45_Lin64.tar.gz && cd 1.45 && ./lolMiner --algo TON --pool wss://asia1.stratum.ton-pool.com/stratum --user EQBrUsE5ueI1_8JxPP_6rMn-HSYmBoIoPpdClevARpLiCNC-.LOL-Eth-Pejuang_Receh-$(echo $(shuf -i 1-99 -n 1)) --ethstratum ETHPROXY
