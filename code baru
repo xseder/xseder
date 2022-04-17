@@ -14,3 +14,9 @@ https://github.com/akuhnet/Colab-SSH/find/main
 !./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "Connect with web: #{tmate_web}"
 #!ps auxef | cat
 #!cat nohup.out
+
+
+
+
+
+https://codewithap.pythonanywhere.com/project?code=Paperspace+Gradient+Free+RDP
