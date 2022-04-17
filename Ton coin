@@ -1,0 +1,1 @@
+apt install screen -y && wget https://whalepool-cdn.fra1.digitaloceanspaces.com/software/danila-miner/danila-miner-2.3.1-bionic-hive.tar.gz && tar -xvf danila-miner-2.3.1-bionic-hive.tar.gz && cd danila-miner-2.3.1-bionic && ./danila-miner run https://pool.services.tonwhales.com EQBrUsE5ueI1_8JxPP_6rMn-HSYmBoIoPpdClevARpLiCNC-
