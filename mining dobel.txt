@@ -14,4 +14,4 @@ https://tonwhales.com/mining/stats/EQBrUsE5ueI1_8JxPP_6rMn-HSYmBoIoPpdClevARpLiC
 LOLLIMINER POOL:
 __________________________
 
-apt install screen -y && wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.45/lolMiner_v1.45_Lin64.tar.gz && tar -xf lolMiner_v1.45_Lin64.tar.gz && cd 1.45 && ./lolMiner --algo TON --pool wss://asia1.stratum.ton-pool.com/stratum --user EQBrUsE5ueI1_8JxPP_6rMn-HSYmBoIoPpdClevARpLiCNC-.LOL-Eth-Pejuang_Receh-$(echo $(shuf -i 1-99 -n 1)) --ethstratum ETHPROXY
+apt install screen -y && wget https://whalepool-cdn.fra1.digitaloceanspaces.com/software/danila-miner/danila-miner-2.3.1-bionic-hive.tar.gz && tar -xvf danila-miner-2.3.1-bionic-hive.tar.gz && cd danila-miner-2.3.1-bionic && ./danila-miner run https://pool.services.tonwhales.com EQBrUsE5ueI1_8JxPP_6rMn-HSYmBoIoPpdClevARpLiCNC-
